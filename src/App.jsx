@@ -1,18 +1,17 @@
 import { Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
 import Compare from "./screens/Compare";
 import Home from "./screens/Home";
-import Footer from "./components/Footer";
+import Layout from "./screens/Layout";
 
 function App() {
   return (
     <div>
-      <Navbar />
       <Routes>
-        <Route path="" element={<Home />} />
-        <Route path="compare" element={<Compare />} />
+        <Route element={<Layout />}>
+          <Route path="" element={<Home />} />
+          <Route path="compare" element={<Compare />} />
+        </Route>
       </Routes>
-      <Footer />
     </div>
   );
 }
