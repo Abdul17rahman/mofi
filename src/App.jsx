@@ -1,11 +1,19 @@
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
+import Compare from "./screens/Compare";
+import Home from "./screens/Home";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <>
+    <div>
       <Navbar />
-      <h1 className="text-red-500">Hello world</h1>
-    </>
+      <Routes>
+        <Route path="" element={<Home />} />
+        <Route path="compare" element={<Compare />} />
+      </Routes>
+      <Footer />
+    </div>
   );
 }
 
