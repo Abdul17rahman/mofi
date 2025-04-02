@@ -1,10 +1,11 @@
 import React from "react";
+import MovieList from "../components/MovieList";
 
 export default function Home() {
   return (
-    <div className="">
-      Home Page
-      <h1 className="text-red-500">Hello world</h1>
+    <div>
+      <h1 className="font-mono text-3xl font-bold">Latest Movies</h1>
+      <MovieList />
     </div>
   );
 }
