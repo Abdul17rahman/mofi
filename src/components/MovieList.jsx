@@ -29,7 +29,7 @@ export default function MovieList({ filter }) {
 
   return (
     <>
-      <div className="my-5 grid lg:grid-cols-4 md:grid-cols-2 sm:grid-col-1 gap-4">
+      <div className="my-5 grid lg:grid-cols-4 md:grid-cols-2 sm:grid-col-1 gap-4 justify-items-center items-center">
         {movies.map((movie) => (
           <Movie key={movie.id} movie={movie} />
         ))}

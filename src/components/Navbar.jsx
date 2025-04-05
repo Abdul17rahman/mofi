@@ -19,7 +19,7 @@ export default function Navbar() {
             <NavLink to="/compare">Compare</NavLink>
           </li>
           <li className="hover:border-b-2 hover:text-green-200 transition-all duration-100 hover:font-bold">
-            <NavLink to="/">Account</NavLink>
+            <NavLink to="/">Donate</NavLink>
           </li>
         </ul>
       </div>
