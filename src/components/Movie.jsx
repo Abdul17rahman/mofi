@@ -15,8 +15,7 @@ export default function Movie({ movie }) {
           <div className="font-bold text-xl mb-2">{movie.title}</div>
 
           <p className="text-gray-700 text-base">
-            Release: {movie.release_date} (
-            {movie.original_language.toUpperCase()})
+            Release: {movie.release_date}
           </p>
         </div>
         <NavLink to={`/moviedetail/${movie.id}`}>
