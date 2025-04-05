@@ -13,13 +13,13 @@ export default function Navbar() {
 
         <ul className="flex">
           <li className="mr-4 hover:border-b-2 hover:text-green-200 transition-all duration-100 hover:font-bold">
-            <NavLink to="/">About</NavLink>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li className="mr-4 hover:border-b-2 hover:text-green-200 transition-all duration-100 hover:font-bold">
             <NavLink to="/compare">Compare</NavLink>
           </li>
           <li className="hover:border-b-2 hover:text-green-200 transition-all duration-100 hover:font-bold">
-            <NavLink to="/">Contact</NavLink>
+            <NavLink to="/">Login</NavLink>
           </li>
         </ul>
       </div>
