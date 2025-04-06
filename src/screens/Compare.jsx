@@ -18,7 +18,6 @@ export default function Compare() {
     } else if (movie2 === null) {
       setMovie2(movieID);
     }
-    console.log(`Movie 1 ${movie1} - Movie 2 ${movie2}`);
   }
 
   useEffect(() => {
@@ -45,6 +44,8 @@ export default function Compare() {
           ? "Enter first movie name."
           : movie1 && !movie2
           ? "Enter second movie name."
+          : !movie1 && movie2
+          ? "Enter first movie name."
           : ""}
       </h1>
       {!movie1 || !movie2 ? (
@@ -53,7 +54,12 @@ export default function Compare() {
           <Searched movies={searchedMovies} onResults={handleMovies} />
         </>
       ) : (
-        <CompareMovies movie1={movie1} movie2={movie2} />
+        <CompareMovies
+          movie1={movie1}
+          movie2={movie2}
+          removeMovie1={() => setMovie1(null)}
+          removeMovie2={() => setMovie2(null)}
+        />
       )}
     </div>
   );

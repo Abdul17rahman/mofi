@@ -3,7 +3,12 @@ import MovieInfo from "./MovieInfo";
 import axios from "axios";
 import { options } from "../utils";
 
-export default function CompareMovies({ movie1, movie2 }) {
+export default function CompareMovies({
+  movie1,
+  movie2,
+  removeMovie1,
+  removeMovie2,
+}) {
   const [compMovie1, setCompMovie1] = useState({});
   const [compMovie2, setCompMovie2] = useState({});
 
@@ -36,8 +41,20 @@ export default function CompareMovies({ movie1, movie2 }) {
   return (
     <div>
       <div className="my-5 grid lg:grid-cols-2 md:grid-cols-2 sm:grid-col-1">
-        <MovieInfo movie={compMovie1} />
-        <MovieInfo movie={compMovie2} />
+        {movie1 && compMovie1 && (
+          <MovieInfo
+            movie={compMovie1}
+            onRemove={removeMovie1}
+            name="Movie 1"
+          />
+        )}
+        {movie2 && compMovie2 && (
+          <MovieInfo
+            movie={compMovie2}
+            onRemove={removeMovie2}
+            name="Movie 2"
+          />
+        )}
       </div>
     </div>
   );
