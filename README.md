@@ -11,8 +11,9 @@ A sleek and interactive movie comparison app built with **React.js**, allowing u
 - 🧠 **Smart UI**: Automatically adjusts to show search input and comparison layout based on user selections.
 
 ## 📸 Preview
+<img width="1440" alt="Screenshot 2025-04-06 at 15 01 25" src="https://github.com/user-attachments/assets/3620f8ca-b34a-4d9a-abee-c5322e23d427" />
 
-![Preview](<Screenshot 2025-04-06 at 15.01.25.png>)
+
 
 ## 🛠️ Technologies Used
 
